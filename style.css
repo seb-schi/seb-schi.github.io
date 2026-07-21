@@ -201,3 +201,131 @@ main {
   .bearing h2 { font-size: 22px; }
   .post-title { font-size: 26px; }
 }
+
+.site-nav {
+  display: flex;
+  gap: 20px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--accent-soft);
+}
+
+.site-nav a { color: var(--accent-soft); }
+.site-nav a:hover,
+.site-nav a[aria-current="page"] { color: var(--ink); }
+
+/* Landing page */
+.landing {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 32px 80px;
+}
+
+.landing-intro {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 56ch;
+  margin: 0 0 40px;
+}
+
+.landing-links {
+  display: grid;
+  gap: 16px;
+}
+
+.landing-card {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 22px 24px;
+  border: 0.5px solid var(--line);
+  border-radius: 10px;
+  transition: border-color 0.15s ease;
+}
+
+.landing-card:hover { border-color: var(--accent); }
+
+.landing-card-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: var(--ink);
+}
+
+.landing-card-dek {
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+/* Projects page */
+.project-dek {
+  font-size: 16px;
+  color: var(--ink-soft);
+  margin: -8px 0 28px;
+}
+
+.stat-row {
+  display: flex;
+  gap: 32px;
+  padding: 20px 0;
+  margin-bottom: 28px;
+  border-top: 0.5px solid var(--line);
+  border-bottom: 0.5px solid var(--line);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-num {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  color: var(--ink);
+}
+
+.stat-label {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  color: var(--accent-soft);
+}
+
+/* Field page */
+.cluster { margin-bottom: 48px; }
+
+.cluster-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+  text-transform: lowercase;
+  margin-bottom: 16px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  background: var(--line);
+}
+
+.photo-grid figcaption {
+  font-size: 13px;
+  color: var(--ink-soft);
+  margin-top: 6px;
+}
+
+@media (max-width: 480px) {
+  .site-nav { gap: 14px; font-size: 11px; }
+}
