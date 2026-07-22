@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Ground We Build the Future On &mdash; Sebastian Schickhoff</title>
+<meta name="description" content="Building has become the easy part. What's scarce is knowing what to build first — the regulatory and human foundation shiny AI tools still need underneath them.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=Newsreader:ital,opsz@0,6..72;1,6..72&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a href="../../index.html" class="brand">
+    <svg width="20" height="20" viewBox="0 0 18 18" aria-hidden="true">
+      <circle cx="9" cy="9" r="7.5" fill="none" stroke="var(--ink)" stroke-width="1"/>
+      <line x1="9" y1="9" x2="9" y2="3" stroke="var(--ink)" stroke-width="1"/>
+      <line x1="9" y1="9" x2="13" y2="11" stroke="var(--accent)" stroke-width="1"/>
+      <circle cx="9" cy="9" r="1" fill="var(--ink)"/>
+    </svg>
+    <span>sebastian schickhoff</span>
+  </a>
+  <nav class="site-nav">
+    <a href="../index.html" aria-current="page">writing</a>
+    <a href="../../projects/index.html">projects</a>
+    <a href="../../field/index.html">field</a>
+  </nav>
+</header>
+
+<main class="post">
+  <div class="bearing-meta">
+    <span class="bearing-num">bearing 01</span>
+    <span class="bearing-date">Jul 8, 2026</span>
+    <span class="bearing-rule" aria-hidden="true"></span>
+    <span class="bearing-time">6 min</span>
+  </div>
+  <h1 class="post-title">The Ground We Build the Future On</h1>
+
+  <div class="post-body">
+
+    <h2 class="section-heading">The New Normal (?)</h2>
+
+    <p>It&rsquo;s the summer of 2026, and things are in flux in the world of tech.</p>
+
+    <p>From the start, Salesforce&rsquo;s business model (and that of SaaS in general) was built on a simple pitch:</p>
+
+    <p><em>Customer:</em> We are facing some complex challenges and would like to use modern technology to help us tackle them. However, we don&rsquo;t have the resources to invest in the necessary IT infrastructure.</p>
+
+    <p><em>SaaS:</em> We have the solution to your problem. Focus on solving the core challenges of your business; let us take care of the complex backend stuff, so you don&rsquo;t have to. It&rsquo;ll be cheaper for you than the alternative, and you&rsquo;ll be more flexible.</p>
+
+    <p>This business model has worked very well for more than 25 years. Up until very recently, when a new player showed up, with an alluring pitch:</p>
+
+    <p><em>AI Labs:</em> We have the solution to your problem. Focus on solving the core challenges of your business; let us take care of the complex backend stuff, so you don&rsquo;t have to. It&rsquo;ll be cheaper for you than the alternative, and you&rsquo;ll be more flexible.</p>
+
+    <p>&hellip; Hey, that&rsquo;s our line!</p>
+
+    <p>AI is now presenting a simple business case: IT tooling is configuring itself now, so it might well be cheaper to cut the SaaS middleman and set up these solutions yourself.</p>
+
+    <p>To tackle this challenge, Salesforce pivots, hard. We fully open up the platform we&rsquo;ve built for over 25 years, making it directly accessible to external AI tools. In doing so, we position it directly against any hypothetical new customer engagement platform developed from scratch. &lsquo;Headless 360&rsquo;, we call it.</p>
+
+    <p>As a pre-sales SE, I&rsquo;m key to somehow making this change a reality with pharma customers out there. And so I find myself in Amsterdam, taking part in a training that is to prepare me for this new world.</p>
+
+    <p>To drive usage, we are going to build working AI solutions with customers&rsquo; Salesforce tech stacks. SEs are huddled over their vibe coding solution of choice, having Claude stand up Agentforce agents and shiny UIs. We configure data streams across S3 buckets and Snowflake data lakes, we set up RAG pipelines and semantic search indices. We also learn from product management that, going forward, we won&rsquo;t actually be doing any of this ourselves because the platform is increasingly set up for LLMs to do all this wiring in our stead.</p>
+
+    <p>By the end of the week, I feel conflicted. While I learned a lot about building, something got lost during these sessions.</p>
+
+    <p>I am reminded of a pharma customer of mine who fully embraced this AI builder mindset, and some of the challenges they faced along the way.</p>
+
+    <h2 class="section-heading">Vibe Code All the Things</h2>
+
+    <p>We&rsquo;re sitting down with a pharma customer in Germany. We&rsquo;d like to work with them to figure out how we can get them up and running with some new Salesforce AI solutions.</p>
+
+    <p>Except that the conversation goes in a different direction than expected. They have recently committed to an entirely new IT approach. After years of centralising data for regulatory compliance across departments and markets, they are now going all-in on the new AI builder mentality: vibe-coding new business applications from the ground up. In this new world, they don&rsquo;t see a need for a SaaS player like us anymore. The meeting ends, and things stall for a while.</p>
+
+    <p>Headless 360 is announced, which could potentially fit into their new builder reality. We reach out to them again for a quick overview.</p>
+
+    <p>To our surprise, they respond enthusiastically. They tell us that building their entire tech stack from scratch came with some challenges. IT deployed their new solutions to business users, who rejected them because they didn&rsquo;t cleanly solve their problems. They&rsquo;re therefore open to the idea of giving our new headless approach a try in parallel.</p>
+
+    <p>One of the biggest hurdles this customer faced was the order of the problems they tackled. They correctly built out the data floor first for regulatory compliance, but instead of sitting down with end users next to identify their individual needs and spec a solution, they skipped straight to the building part. As a result, they lost their shot at a positive first impression with their users, and are now facing a steeper uphill battle for future rollouts.</p>
+
+    <p>At least this customer had the regulatory basics down before they started building, though. I learned the hard way during another project what can happen when the foundation hasn&rsquo;t been laid yet.</p>
+
+    <h2 class="section-heading">Shiny New Toys</h2>
+
+    <p>Salesforce introduced a suite of specialised solutions for pharma customers, Life Sciences Cloud, and I&rsquo;m pitching a pre-release demo to another pharma customer in Germany.</p>
+
+    <p>Salesforce is new to this area of pharma. I&rsquo;m a little nervous because I know that we&rsquo;re seen as the new kid on the block. In this industry, trust and in-depth knowledge are everything, as every mistake can carry heavy regulatory penalties. My response to this is to lean into our tech advantage. Our new solution is built from the ground up with AI and hybrid data architecture in mind, which, in theory, makes entirely new ways of working possible.</p>
+
+    <p>I demo several of these new ways of working. Advanced account summaries, segmentation-based next best actions, an AI agent that supports MSLs with logging adverse events after HCP interactions. At first, the customer audience looks confused; as the session goes on, they increasingly look annoyed. Not good. Eventually, one of them interrupts the session.</p>
+
+    <p>&ldquo;I&rsquo;ll be honest, this new AI tech looks impressive, but it really concerns me. Do you have any idea what would happen if these solutions misfire? The MSL agent alone is a regulatory minefield. How do we control where this data comes from, how we log things, who sees what?&rdquo;</p>
+
+    <p>Point taken. I got so carried away by showing off shiny new tech toys that I lost sight of the basic challenges this customer is facing every day. Collaborating and sharing data across departments, auditability, content and messaging control. The foundation that must be in place before they could even consider any new ways of doing things, no matter how shiny.</p>
+
+    <p>With these challenges in mind, I go back to the drawing board to re-examine the customer&rsquo;s architecture. I scaffold a territory system that shows, at a data record level, who has access to what. I set up deterministic automations in the system to handle handovers between departments. Alongside a team of architects I sketch out AI pipelines that use the new GenAI capabilities where they are strongest: as glue between these different data building blocks. This way we are surfacing complex insights at the right time and in the right language, while ensuring that no sensitive data leaves the customer&rsquo;s server environment.</p>
+
+    <p>We schedule a follow-up session with the customer to go deep on this new architecture with their IT folks, while showing off all these automations to their business users. The critical stakeholder from last time nods, they get it now. They buy in.</p>
+
+    <h2 class="section-heading">The New Normal (!)</h2>
+
+    <p>Back in Amsterdam, I&rsquo;m packing up my things as I reflect on the training. I learned a lot of useful, hands-on building skills; that&rsquo;s what this week was all about, after all. And yet, I know from first-hand experience that the building was never the hard part, no matter whether I vibe-code it or configure it in a SaaS platform.</p>
+
+    <p>To build a new future with shiny tech, I first have to lay the ground for it. The foundational data and regulatory setup, the needs of real humans, translated into processes. Skip any of these, and people shut down conversations before they even happen.</p>
+
+  </div>
+
+  <a href="../index.html" class="back-link">&larr; back to field notes</a>
+</main>
+
+<footer class="site-footer">
+  <span>&copy; 2026 Sebastian Schickhoff</span>
+</footer>
+
+</body>
+</html>
