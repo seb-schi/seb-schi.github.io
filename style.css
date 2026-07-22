@@ -188,6 +188,20 @@ main {
 
 .post-body p { margin: 0 0 22px; }
 
+.section-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin: 44px 0 18px;
+}
+
+.post-body .section-heading:first-child {
+  margin-top: 0;
+}
+
 .back-link {
   display: inline-block;
   margin-top: 40px;
