@@ -107,6 +107,13 @@ main {
   white-space: nowrap;
 }
 
+.bearing-date {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 11px;
+  color: var(--accent-soft);
+  white-space: nowrap;
+}
+
 .bearing h2 {
   font-family: 'Space Grotesk', sans-serif;
   font-weight: 500;
